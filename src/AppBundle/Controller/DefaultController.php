@@ -58,14 +58,13 @@ class DefaultController extends Controller
     {
         $product = $this->getDoctrine()
             ->getRepository(Product::class)
-            ->find($productId);
+            ->findOneByIdJoinedToCategory($productId);
 
         if (!$product) {
             throw $this->createNotFoundException(
                 'No product found for id '.$productId
             );
         }
-
 
         return $this->render('default/show_product.html.twig', array(
             'product' => $product,

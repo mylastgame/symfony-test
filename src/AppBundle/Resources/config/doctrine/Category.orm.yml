@@ -12,7 +12,7 @@ AppBundle\Entity\Category:
         name:
             type: string
             length: 255
-    OneToMany:
+    oneToMany:
             products:
                 targetEntity: Product
                 mappedBy: category

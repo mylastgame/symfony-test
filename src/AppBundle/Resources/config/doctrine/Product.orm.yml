@@ -17,10 +17,10 @@ AppBundle\Entity\Product:
         description:
             type: text
     manyToOne:
-            category:
-                targetEntity: Category
-                inversedBy: products
-                joinColumn:
-                    name: category_id
-                    referencedColumnName: id
+           category:
+               targetEntity: Category
+               inversedBy: products
+               joinColumn:
+                   name: category_id
+                   referencedColumnName: id
     lifecycleCallbacks: {  }
