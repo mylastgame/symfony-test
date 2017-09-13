@@ -1,0 +1,23 @@
+<div class="card mb-5">
+    <div class="card-block">
+        <h6 class="card-header">
+            Important Stats:
+            <span class="float-right">
+                            <span class="badge badge-primary">Repositories: {{ repo_count }}</span>
+                            <span class="badge badge-success">Most Stars: {{ most_stars }}</span>
+                        </span>
+        </h6>
+    </div>
+</div>
+
+<div class="card">
+    <h5 class="card-header">Repo List</h5>
+    <div class="card-block">
+        <ul class="list-group">
+            {% for repo in repos %}
+                <li class="list-group-item">{%  include ':githut:repo.html.twig' %}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>

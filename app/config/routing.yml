@@ -1,3 +1,9 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+report_index:
+    path:     /report
+    defaults: { _controller: AppBundle:Report:index }
+githut:
+    path:     /githut/
+    defaults: { _controller: AppBundle:GitHut:index }
+githut_profile:
+    path:     /githut/profile/
+    defaults: { _controller: AppBundle:GitHut:profile }
