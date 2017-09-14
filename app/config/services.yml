@@ -7,3 +7,9 @@ services:
     #service_name:
     #    class: AppBundle\Directory\ClassName
     #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+    guzzleHttpClient:
+        class: AppBundle\Service\GuzzleHttpClient
+    gitHubApi:
+        class: AppBundle\Service\GitHubApi
+        arguments:
+            - "@guzzleHttpClient"
