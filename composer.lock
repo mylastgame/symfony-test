@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "77f76b91f13ac08891f846c1d4f1db89",
+    "content-hash": "a7405765db1fd1ef9f0abe0be1d12421",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -835,6 +835,125 @@
             "time": "2017-08-18T19:17:35+00:00"
         },
         {
+            "name": "eightpoints/guzzle-bundle",
+            "version": "v6.1.0",
+            "target-dir": "EightPoints/Bundle/GuzzleBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/8p/GuzzleBundle.git",
+                "reference": "35a44f7cfa472643375b53151d82c40f4a53e8fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/8p/GuzzleBundle/zipball/35a44f7cfa472643375b53151d82c40f4a53e8fe",
+                "reference": "35a44f7cfa472643375b53151d82c40f4a53e8fe",
+                "shasum": ""
+            },
+            "require": {
+                "eightpoints/guzzle-wsse-middleware": "~4.0",
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.6",
+                "psr/log": "~1.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/event-dispatcher": "~2.3|~3.0",
+                "symfony/expression-language": "~2.3|~3.0",
+                "symfony/http-kernel": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.4",
+                "symfony/config": "2.3|~3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "EightPoints\\Bundle\\GuzzleBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Community",
+                    "homepage": "https://github.com/8p/GuzzleBundle/contributors"
+                },
+                {
+                    "name": "Florian Preusner",
+                    "email": "florian.preusner@8points.de",
+                    "homepage": "https://github.com/florianpreusner"
+                }
+            ],
+            "description": "Integrates Guzzle into Symfony2, comes with WSSE Plugin for RESTful Interfaces",
+            "homepage": "https://github.com/8p/GuzzleBundle",
+            "keywords": [
+                "Guzzle",
+                "bundle",
+                "client",
+                "curl",
+                "http client",
+                "rest",
+                "symfony",
+                "web service"
+            ],
+            "time": "2017-09-13T12:42:59+00:00"
+        },
+        {
+            "name": "eightpoints/guzzle-wsse-middleware",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/8p/guzzle-wsse-middleware.git",
+                "reference": "3998dae6fed29f2d3384024764046b63a764ddda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/8p/guzzle-wsse-middleware/zipball/3998dae6fed29f2d3384024764046b63a764ddda",
+                "reference": "3998dae6fed29f2d3384024764046b63a764ddda",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=6.0",
+                "php": ">=5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "EightPoints\\Guzzle": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Preusner",
+                    "email": "florian.preusner@8points.de",
+                    "homepage": "https://github.com/florianpreusner"
+                },
+                {
+                    "name": "Community",
+                    "homepage": "https://github.com/eightpoints/guzzle-wsse-middleware/contributors"
+                }
+            ],
+            "description": "WSSE Middleware for Guzzle, a PHP HTTP client library and framework for building RESTful web service clients",
+            "homepage": "https://github.com/8p/guzzle-wsse-middleware",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "middleware",
+                "plugin",
+                "rest",
+                "web service",
+                "wsse"
+            ],
+            "time": "2016-06-03T14:03:33+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.0",
             "source": {
@@ -1115,6 +1234,54 @@
                 "sql"
             ],
             "time": "2014-01-12T16:20:24+00:00"
+        },
+        {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "d59932b335c2f2f3ec9eee66a37db6bd50d39e13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/d59932b335c2f2f3ec9eee66a37db6bd50d39e13",
+                "reference": "d59932b335c2f2f3ec9eee66a37db6bd50d39e13",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.3"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Buzz\\": "lib/Buzz"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ],
+            "time": "2017-08-19T09:43:47+00:00"
         },
         {
             "name": "monolog/monolog",

@@ -15,16 +15,16 @@ class GuzzleHttpClient implements HttpClientInterface
     protected $_client;
 
     //public function __construct(\GuzzleHttp\Client $client)
-    public function __construct()
+    public function __construct(\GuzzleHttp\Client $client)
     {
-        $this->_client = new \GuzzleHttp\Client();
+        $this->_client = $client;
     }
 
     public function get($url)
     {
         //$response = $client->request('GET', 'https://api.github.com/users/' . $username);
-        $response = $this->_client->request($url);
-        $data = json_decode($response->getBody()->getContents(), true);
+        $response = $this->_client->get($url);
+        return json_decode($response->getBody()->getContents(), true);
     }
 
     public function post($url, $data)
